@@ -27,9 +27,11 @@ print("X",X,"y",Y,"R")
 # for i in range(361):TTT
 
 runtime=int(input("Enter Run Time"))
+time.sleep(6)
 currentTime=time.time()
 t_end = time.time() + 60 *runtime
 while time.time()<t_end:
+    time.sleep(3)
     pyautogui.moveTo((random.randint(600,700)+random.randint(100,150)),(random.randint(300,400)+random.randint(100,150)))
     # pyautogui.dragTo(X+R*math.sin(math.radians(i)), Y+R*math.cos(math.radians(i)))
     # pyautogui.dragTo()  # for auto Click
